@@ -80,12 +80,6 @@ PRIVATE_HEADERS = source/util_bit_array_private.h
 HEADERS = $$API_HEADERS $$PRIVATE_HEADERS
 
 ########################################################################################################################
-# Libraries
-#
-
-include("$${SOURCE_ROOT}/third_party/operating_system.pri")
-
-########################################################################################################################
 # Locate build intermediate and output products
 #
 
