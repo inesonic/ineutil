@@ -80,6 +80,18 @@ PRIVATE_HEADERS = source/util_bit_array_private.h
 HEADERS = $$API_HEADERS $$PRIVATE_HEADERS
 
 ########################################################################################################################
+# Operating System
+#
+
+win32 {
+    defined(SETTINGS_PRI, var) {
+        include($${SETTINGS_PRI})
+    }
+
+    LIBS += "$${WINDOWS_KIT_LIBDIR}/AdvAPI32.Lib"
+}
+
+########################################################################################################################
 # Locate build intermediate and output products
 #
 
